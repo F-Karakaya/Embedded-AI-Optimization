@@ -61,9 +61,9 @@ graph TD
 
 ---
 
-## ⚙️ Setup & Execution (Windows 10)
+## ⚙️ Setup & Execution
 
-While targeting edge hardware, this repo is fully developed and validated on Windows 10 using **Hardware Simulation**.
+While targeting edge hardware, this repo is fully developed and validated on Windows using **Hardware Simulation**.
 
 ### 1. Installation
 ```bash
@@ -126,7 +126,7 @@ We remove "unimportant" connections (weights near zero).
 ## 📊 Results & Benchmarks
 
 The following results compare the Baseline (FP32) against our Optimized (INT8) variants.
-*   **Host**: Windows 10 (Simulation of Edge Node)
+*   **Host**: Windows (Simulation of Edge Node)
 *   **Target HW**: Estimates based on standard Raspberry Pi 4 / Jetson Nano metrics.
 
 ### 1. Model Footprint
@@ -158,7 +158,7 @@ The following results compare the Baseline (FP32) against our Optimized (INT8) v
 
 ## ⚠️ Simulation vs. Reality
 
-**Disclaimer**: This workspace operates on Windows 10 x86_64 architecture.
+**Disclaimer**: This workspace operates on Windows x86_64 architecture.
 *   **Executed**: All Python logic, pipeline orchestration, ONNX export, and CPU benchmarking.
 *   **Simulated**: The `deployment/jetson` and `deployment/raspberry_pi` folders contain production-ready code intended for those specific architectures. Running `jetson/inference_trt.py` on Windows will fall back to a mock mode to demonstrate code correctness without crashing.
 

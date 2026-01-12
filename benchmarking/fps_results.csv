@@ -1,0 +1,2 @@
+Model,Batch Size,FPS
+models/original/mobilenet_v2.onnx,1,304.45

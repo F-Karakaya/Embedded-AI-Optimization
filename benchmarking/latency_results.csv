@@ -1,0 +1,2 @@
+Model,Average Latency (ms)
+models/original/mobilenet_v2.onnx,3.245
